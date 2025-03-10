@@ -1,0 +1,245 @@
+<!-- Creator     : groff version 1.23.0 -->
+<!-- CreationDate: Mon Mar 10 22:54:26 2025 -->
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta name="generator" content="groff -Thtml, see www.gnu.org">
+<meta http-equiv="Content-Type" content="text/html; charset=US-ASCII">
+<meta name="Content-Style" content="text/css">
+<style type="text/css">
+       p       { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       pre     { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       table   { margin-top: 0; margin-bottom: 0; vertical-align: top }
+       h1      { text-align: center }
+</style>
+<title>1</title>
+
+</head>
+<body>
+
+<h1 align="center">1</h1>
+
+<a href="#NAME">NAME</a><br>
+<a href="#SYNOPSIS">SYNOPSIS</a><br>
+<a href="#DESCRIPTION">DESCRIPTION</a><br>
+<a href="#POSITIONAL ARGUMENTS">POSITIONAL ARGUMENTS</a><br>
+<a href="#COMMAND &rsquo; generate&rsquo;">COMMAND &rsquo; generate&rsquo;</a><br>
+<a href="#OPTIONS &rsquo; generate&rsquo;">OPTIONS &rsquo; generate&rsquo;</a><br>
+<a href="#COMMAND &rsquo; deploy&rsquo;">COMMAND &rsquo; deploy&rsquo;</a><br>
+<a href="#OPTIONS &rsquo; deploy&rsquo;">OPTIONS &rsquo; deploy&rsquo;</a><br>
+<a href="#COMMAND &rsquo; config&rsquo;">COMMAND &rsquo; config&rsquo;</a><br>
+<a href="#POSITIONAL ARGUMENTS &rsquo; config&rsquo;">POSITIONAL ARGUMENTS &rsquo; config&rsquo;</a><br>
+<a href="#COMMAND &rsquo; config set&rsquo;">COMMAND &rsquo; config set&rsquo;</a><br>
+<a href="#COMMAND &rsquo; config get&rsquo;">COMMAND &rsquo; config get&rsquo;</a><br>
+<a href="#COMMAND &rsquo; config reset&rsquo;">COMMAND &rsquo; config reset&rsquo;</a><br>
+<a href="#OPTIONS &rsquo; config reset&rsquo;">OPTIONS &rsquo; config reset&rsquo;</a><br>
+
+<hr>
+
+
+<h2>NAME
+<a name="NAME"></a>
+</h2>
+
+
+<h2>SYNOPSIS
+<a name="SYNOPSIS"></a>
+</h2>
+
+
+<p style="margin-left:9%; margin-top: 1em"><b>[-h]</b>
+{generate,deploy,config} ...</p>
+
+<h2>DESCRIPTION
+<a name="DESCRIPTION"></a>
+</h2>
+
+
+<p style="margin-left:9%; margin-top: 1em">A program to
+create and deploy compressed archives for software apps.</p>
+
+<h2>POSITIONAL ARGUMENTS
+<a name="POSITIONAL ARGUMENTS"></a>
+</h2>
+
+
+
+<p style="margin-left:9%; margin-top: 1em"><i>generate</i></p>
+
+<p style="margin-left:18%;">Generate a compressed file for
+an app.</p>
+
+<p style="margin-left:9%;"><i>deploy</i></p>
+
+<p style="margin-left:18%;">Deploy an app to a remote
+machine.</p>
+
+<p style="margin-left:9%;"><i>config</i></p>
+
+<p style="margin-left:18%;">Configuration commands</p>
+
+<h2>COMMAND &rsquo; generate&rsquo;
+<a name="COMMAND &rsquo; generate&rsquo;"></a>
+</h2>
+
+
+<p style="margin-left:9%; margin-top: 1em">usage: generate
+[-h] (--app-type APP_TYPE | --config FILE) [--overwrite]
+[--strict]</p>
+
+<h2>OPTIONS &rsquo; generate&rsquo;
+<a name="OPTIONS &rsquo; generate&rsquo;"></a>
+</h2>
+
+
+
+<p style="margin-left:9%; margin-top: 1em"><b>--app-type</b>
+<i>APP_TYPE</i>, <b>-A</b> <i>APP_TYPE</i></p>
+
+<p style="margin-left:18%;">The name of the app you want to
+generate.</p>
+
+<p style="margin-left:9%;"><b>--config</b> <i>FILE</i>,
+<b>-C</b> <i>FILE</i>, <b>--file</b> <i>FILE</i>, <b>-f</b>
+<i>FILE</i></p>
+
+<p style="margin-left:18%;">Path to an app config file.</p>
+
+<p style="margin-left:9%;"><b>--overwrite</b>,
+<b>--over</b></p>
+
+<p style="margin-left:18%;">Overwrite the existing app
+file.</p>
+
+<p style="margin-left:9%;"><b>--strict</b>, <b>-s</b></p>
+
+<p style="margin-left:18%;">Raise errors instead of
+warnings.</p>
+
+<h2>COMMAND &rsquo; deploy&rsquo;
+<a name="COMMAND &rsquo; deploy&rsquo;"></a>
+</h2>
+
+
+<p style="margin-left:9%; margin-top: 1em">usage: deploy
+[-h] --host HOST --password PASSWORD --user USER
+--connection CONNECTION compressed-app-file <b><br>
+compressed-app-file</b></p>
+
+<p style="margin-left:18%;">The path to the compressed file
+of the app you want to deploy.</p>
+
+<h2>OPTIONS &rsquo; deploy&rsquo;
+<a name="OPTIONS &rsquo; deploy&rsquo;"></a>
+</h2>
+
+
+
+<p style="margin-left:9%; margin-top: 1em"><b>--connection</b>
+<i>CONNECTION</i>, <b>-C</b> <i>CONNECTION</i></p>
+
+<p style="margin-left:18%;">SSH Connection string (i.e.
+user:pass123@192.168.10.57).</p>
+
+<h2>COMMAND &rsquo; config&rsquo;
+<a name="COMMAND &rsquo; config&rsquo;"></a>
+</h2>
+
+
+<p style="margin-left:9%; margin-top: 1em">usage: config
+[-h] {set,get,reset} ...</p>
+
+<h2>POSITIONAL ARGUMENTS &rsquo; config&rsquo;
+<a name="POSITIONAL ARGUMENTS &rsquo; config&rsquo;"></a>
+</h2>
+
+
+<p style="margin-left:9%; margin-top: 1em"><b>config</b>
+<i>set</i></p>
+
+<p style="margin-left:18%;">Set the given setting with the
+given value.</p>
+
+<p style="margin-left:9%;"><b>config</b> <i>get</i></p>
+
+<p style="margin-left:18%;">Get the value of the given
+setting.</p>
+
+<p style="margin-left:9%;"><b>config</b> <i>reset</i></p>
+
+<p style="margin-left:18%;">Reset a single setting or all,
+to the default value.</p>
+
+<h2>COMMAND &rsquo; config set&rsquo;
+<a name="COMMAND &rsquo; config set&rsquo;"></a>
+</h2>
+
+
+<p style="margin-left:9%; margin-top: 1em">usage: config
+set [-h]
+{generator.default_output_format,generator.output_path,generator.strict_by_default}
+value [value ...] <b><br>
+
+{generator.default_output_format,generator.output_path,generator.strict_by_default}</b></p>
+
+<p style="margin-left:18%;">The name of the setting you
+want to change.</p>
+
+<table width="100%" border="0" rules="none" frame="void"
+       cellspacing="0" cellpadding="0">
+<tr valign="top" align="left">
+<td width="9%"></td>
+<td width="6%">
+
+
+<p><b>value</b></p></td>
+<td width="3%"></td>
+<td width="53%">
+
+
+<p>The value of the setting you want to set.</p></td>
+<td width="29%">
+</td></tr>
+</table>
+
+<h2>COMMAND &rsquo; config get&rsquo;
+<a name="COMMAND &rsquo; config get&rsquo;"></a>
+</h2>
+
+
+<p style="margin-left:9%; margin-top: 1em">usage: config
+get [-h]
+{generator.default_output_format,generator.output_path,generator.strict_by_default}
+<b><br>
+
+{generator.default_output_format,generator.output_path,generator.strict_by_default}</b></p>
+
+<p style="margin-left:18%;">The name of the setting you
+want to fetch.</p>
+
+<h2>COMMAND &rsquo; config reset&rsquo;
+<a name="COMMAND &rsquo; config reset&rsquo;"></a>
+</h2>
+
+
+<p style="margin-left:9%; margin-top: 1em">usage: config
+reset [-h] [--setting
+{generator.default_output_format,generator.output_path,generator.strict_by_default}]</p>
+
+<h2>OPTIONS &rsquo; config reset&rsquo;
+<a name="OPTIONS &rsquo; config reset&rsquo;"></a>
+</h2>
+
+
+
+<p style="margin-left:9%; margin-top: 1em"><b>--setting</b>
+<i><br>
+
+{generator.default_output_format,generator.output_path,generator.strict_by_default}</i></p>
+
+<p style="margin-left:18%;">The name of the setting you
+want to reset to default.</p>
+<hr>
+</body>
+</html>
